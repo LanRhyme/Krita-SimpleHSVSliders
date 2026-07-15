@@ -20,4 +20,4 @@ This plugin is a modified version based on the original **HCL Sliders** plugin. 
 This program is free software under the GNU General Public License version 3.
 
 ## 鸣谢 (Credits)
-> 本项目是基于 Pedro Reis 的开源项目 `simple_hsv_sliders` 进行深度修改和适配的版本。特此鸣谢原作者提供的优秀色彩滑块交互设计！
+> 本项目是基于 Pedro Reis 的开源项目 [`simple_hsv_sliders`](https://github.com/veryprofessionaldodo/Krita-Simple-HSV-Sliders) 进行深度修改和适配的版本。特此鸣谢原作者提供的优秀色彩滑块交互设计！
