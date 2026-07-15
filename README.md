@@ -1,5 +1,9 @@
 # Simple HSV Sliders
 
+![Screenshot](screenshot.png)
+
+
+
 A simple HSV sliders color selection plugin for Krita, adapted for PyQt5 / PyQt6 dual compatibility.
 
 ## 兼容性说明
