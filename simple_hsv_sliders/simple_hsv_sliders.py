@@ -794,14 +794,6 @@ class HCLSliders(DockWidget):
         self.color.setFixedHeight(DISPLAY_HEIGHT)
         layout.addWidget(self.color)
 
-        button = QPushButton()
-        button.setIcon(Application.icon('configure'))
-        button.setFlat(True)
-        button.setFixedSize(DISPLAY_HEIGHT, DISPLAY_HEIGHT)
-        button.setIconSize(QSize(DISPLAY_HEIGHT - 2, DISPLAY_HEIGHT - 2))
-        button.setToolTip("Configure Simple HSV Sliders")
-        button.clicked.connect(self.openConfig)
-        layout.addWidget(button)
 
         self.timer = QTimer()
         self.timer.timeout.connect(self.getKritaColors)
