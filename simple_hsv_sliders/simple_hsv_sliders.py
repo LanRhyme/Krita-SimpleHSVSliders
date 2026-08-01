@@ -220,7 +220,7 @@ class ColorHistory(QListWidget):
 
     def startScrollShift(self, event):
         self.start = self.horizontalScrollBar().value()
-        self.position = int(event.position().x())
+        self.position = int(mouse_x(event))
     
     def keyPressEvent(self, event):
         # disable keyboard interactions
@@ -228,7 +228,7 @@ class ColorHistory(QListWidget):
 
     def mousePressEvent(self, event):
         self.hcl.setPressed(True)
-        item = self.itemAt(event.position().toPoint())
+        item = self.itemAt(mouse_point(event))
         index = self.row(item)
 
         if index != -1:
@@ -267,14 +267,14 @@ class ColorHistory(QListWidget):
                 # speed of grid width squared seems good
                 speed = (HISTORY_HEIGHT + 2) ** 2
                 # move bar at constant speed
-                shift = float(self.position - int(event.position().x())) / self.width()
+                shift = float(self.position - int(mouse_x(event))) / self.width()
                 position = round(self.start + shift * speed)
             bar.setValue(position)
         else:
             self.startScrollShift(event)
 
     def mouseReleaseEvent(self, event):
-        item = self.itemAt(event.position().toPoint())
+        item = self.itemAt(mouse_point(event))
         index = self.row(item)
 
         if index == self.index and index != -1:
@@ -366,7 +366,7 @@ class ChannelSlider(QWidget):
         self.displacement = displacement
 
     def emitValueChanged(self, event):
-        position = int(event.position().x())
+        position = int(mouse_x(event))
         width = self.width()
         if position > width:
             position = width
@@ -377,7 +377,7 @@ class ChannelSlider(QWidget):
         self.mousePressed.emit(True)
 
     def emitValueSnapped(self, event):
-        position = int(event.position().x())
+        position = int(mouse_x(event))
         width = self.width()
         if position > width:
             position = width
@@ -405,10 +405,10 @@ class ChannelSlider(QWidget):
     
     def startValueShift(self, event):
         self.start = self.value
-        self.position = int(event.position().x())
+        self.position = int(mouse_x(event))
     
     def emitValueShifted(self, event):
-        position = int(event.position().x())
+        position = int(mouse_x(event))
         vector = position - self.position
         if self.limit < 100:
             self.shift /= 100 / self.limit
