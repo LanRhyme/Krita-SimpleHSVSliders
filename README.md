@@ -9,6 +9,8 @@
 
 A simple HSV sliders color selection plugin for Krita, adapted for PyQt5 / PyQt6 dual compatibility.
 
+![Screenshot](screenshot.png)
+
 </div>
 
 ## 兼容性说明
@@ -19,7 +21,7 @@ A simple HSV sliders color selection plugin for Krita, adapted for PyQt5 / PyQt6
 
 This plugin is a modified version based on the original **HCL Sliders** plugin. All original design and logic credits belong to their respective authors:
 
-*   **Original Author:** Lucifer (krita-artists.org/u/Lucifer)
-*   **Incorporated Work:** Pigment.O Color Picker and Color Mixer by Ricardo Jeremias (Copyright © 2020)
+* **Original Author:** Lucifer (krita-artists.org/u/Lucifer)
+* **Incorporated Work:** Pigment.O Color Picker and Color Mixer by Ricardo Jeremias (Copyright © 2020)
 
 This program is free software under the GNU General Public License version 3.
