@@ -1,3 +1,5 @@
+<div align="center">
+
 # Simple HSV Sliders
 
 <a href="https://qm.qq.com/q/mtg1yNCi1q">
@@ -8,6 +10,7 @@
   <a href="https://afdian.com/a/LanRhyme" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/afdian-@LanRhyme-946ce6?style=for-the-badge&logo=afdian&logoColor=white" alt="afdian"></a>
 
+</div>
 
 A simple HSV sliders color selection plugin for Krita, adapted for PyQt5 / PyQt6 dual compatibility.
 
